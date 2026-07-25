@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Person</title>
+</head>
+<body>
+    <header>
+        <img src="images/leftArr.svg" alt="Back" id="backButton" onclick="goBack()">
+        <h1>Add New Person</h1>
+    
+    </header>
+    <main>
+        <section id="addPersonForm">
+            <form id="newPersonForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <label for="firstImpression">First Impression:</label>
+                <input type="text" id="firstImpression" name="firstImpression" required>
+                <button type="submit">Add Person</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+
+        document.getElementById('newPersonForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            event.key = 'Enter'; // Simulate pressing the Enter key
+            if (event.key === 'Enter') {
+                // Handle form submission logic here
+                console.log('Form submitted');
+                window.location.href = "index.html"; // Redirect to index.html after submission
+            }
+            const name = document.getElementById('name').value;
+            const gender = document.getElementById('gender').value;
+            const age = document.getElementById('age').value;
+            const firstImpression = document.getElementById('firstImpression').value;
+        });
+
+    </script>
+
+</body>
+</html>

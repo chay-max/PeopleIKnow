@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeopleIKnow</title>
+</head>
+<body>
+    <header>
+        
+        <h1>PeopleIKnow</h1>
+        <p>Welcome to PeopleIKnow! <br> This is a simple web app made for people that met a lot of people and simply named them as soon as possible</p>
+    </header>
+    <main>
+        <section id="addPerson">
+            <button id="addPersonButton" onclick="location.href='newPerson.html'">Add New Person</button>
+            <button id="aboutPeopleIKnow" onclick="location.href='about.html'">About PeopleIKnow</button>
+        </section>
+        <section id="search">
+            <h2>Search for People</h2>
+            <input type="text" id="searchInput" placeholder="Enter a name...">
+            <button id="searchButton">Search</button>
+        </section>
+
+        <section id="results">
+            <h2 class="section-title">Results</h2>
+            <ul id="resultsList"></ul>
+        </section>
+    </main>
+</body>
+</html>

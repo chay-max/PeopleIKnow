@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PeopleIKnow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/leftArr.svg" alt="Back" id="backButton" onclick="goBack()">
+        <h1>About PeopleIKnow</h1>
+    </header>
+    <main>
+        <section id="aboutContent">
+            <p>PeopleIKnow is a simple web app designed to help you keep track of the people you know. <br> <br>
+                this app was made by Maxwell Christopher Chay who still at the 11th grade. and wanted to be continue studying computer science.
+                <br> <br> this app was made using HTML, CSS, and JavaScript. and the backend was made using Node.js and Express.js. also for the database, I used MongoDB. <br> <br>
+                the purpose of this app is to help people who met a lot of people and simply named them as soon as possible. <br> <br>
+                this app is still in development and will be updated regularly. <br> <br>
+            </p>
+        </section>
+        <section id="aboutContact">
+            <button id="aboutButton" onclick="seeProjects()">See my current projects!</button>
+        </section>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+
+        function seeProjects() {
+            window.location.href = "https://github.com/chay-max";
+        }
+    </script>
+</body>
+</html>
